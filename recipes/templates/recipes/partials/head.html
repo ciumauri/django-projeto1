@@ -1,219 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css"
-    />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://bulma.io/css/bulma-docs.min.css?v=202204041328"
-    />
+  <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="https://bulma.io/css/bulma-docs.min.css?v=202204041328" />
 
-    <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet" />
 
-    <!-- Embedded style sheet -->
-    <style>
-      :root {
-        --color-primary: #269fe6;
-        --color-primary-hover: #2086c2;
-        --color-primary-dark: #13141f;
-        --color-primary-dark-hover: #212336;
-        --color-primary-light: #d4ecfa;
-        --color-primary-light-hover: #bdd8e7;
+  <title>Home</title>
 
-        --color-white: #fff;
-        --color-black: #000;
+  <!-- Embedded style sheet -->
+  <style>
+    :root {
+      --color-primary: #269fe6;
+      --color-primary-hover: #2086c2;
+      --color-primary-dark: #13141f;
+      --color-primary-dark-hover: #212336;
+      --color-primary-light: #d4ecfa;
+      --color-primary-light-hover: #bdd8e7;
 
-        --color-dark-text: #444;
-        --color-info-light: #cce5ff;
-        --color-debug-light: #cce5ff;
-        --color-success-light: #d4edda;
-        --color-alert-light: #fff3cd;
-        --color-warning-light: #fff3cd;
-        --color-error-light: #f8d7da;
+      --color-white: #fff;
+      --color-black: #000;
 
-        --color-info-dark: #4d86c4;
-        --color-debug-dark: #4d86c4;
-        --color-success-dark: #4a9c5d;
-        --color-alert-dark: #927f40;
-        --color-warning-dark: #927f40;
-        --color-error-dark: #da525d;
+      --color-dark-text: #444;
+      --color-info-light: #cce5ff;
+      --color-debug-light: #cce5ff;
+      --color-success-light: #d4edda;
+      --color-alert-light: #fff3cd;
+      --color-warning-light: #fff3cd;
+      --color-error-light: #f8d7da;
 
-        --color-gray-0: #f9f9f9;
-        --color-gray-1: #e0e0e0;
-        --color-gray-2: #c7c7c7;
-        --color-gray-3: #aeaeae;
-        --color-gray-4: #959595;
-        --color-gray-5: #7d7d7d;
-        --color-gray-6: #646464;
-        --color-gray-7: #4b4b4b;
-        --color-gray-8: #323232;
-        --color-gray-9: #191919;
+      --color-info-dark: #4d86c4;
+      --color-debug-dark: #4d86c4;
+      --color-success-dark: #4a9c5d;
+      --color-alert-dark: #927f40;
+      --color-warning-dark: #927f40;
+      --color-error-dark: #da525d;
 
-        --font-primary: sans-serif;
-        --font-headings: "Roboto Slab", serif;
+      --color-gray-0: #f9f9f9;
+      --color-gray-1: #e0e0e0;
+      --color-gray-2: #c7c7c7;
+      --color-gray-3: #aeaeae;
+      --color-gray-4: #959595;
+      --color-gray-5: #7d7d7d;
+      --color-gray-6: #646464;
+      --color-gray-7: #4b4b4b;
+      --color-gray-8: #323232;
+      --color-gray-9: #191919;
 
-        --spacing-gutter-medium: 2.5rem;
-        --spacing-gutter-large: 4rem;
-      }
+      --font-primary: sans-serif;
+      --font-headings: "Roboto Slab", serif;
 
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+      --spacing-gutter-medium: 2.5rem;
+      --spacing-gutter-large: 4rem;
+    }
 
-      html {
-        font-size: 62.5%;
-      }
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-      body {
-        font-size: 1.6rem;
-        font-family: var(--font-primary);
-        background: var(--color-gray-1);
-      }
+    html {
+      font-size: 62.5%;
+    }
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: var(--font-headings);
-      }
+    body {
+      font-size: 1.6rem;
+      font-family: var(--font-primary);
+      background: var(--color-gray-1);
+      color: var(--color-dark-text);
+    }
 
-      .container {
-        max-width: 144rem;
-        margin: 0 auto;
-        padding: var(--spacing-gutter-medium);
-      }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-headings);
+    }
 
-      .main-header-container {
-        background-color: var(--color-primary-dark);
-      }
+    .container {
+      max-width: 144rem;
+      margin: 0 auto;
+      padding: var(--spacing-gutter-medium);
+    }
 
-      .main-logo {
-        font-size: 4rem;
-        color: var(--color-white);
-        text-decoration: none;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: center;
-        width: fit-content;
-        margin: 0 auto;
-      }
+    .main-header-container {
+      background-color: var(--color-primary-dark);
+    }
 
-      .main-logo-icon {
-        margin-right: 2rem;
-      }
+    .main-logo {
+      font-size: 4rem;
+      color: var(--color-white);
+      text-decoration: none;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      margin: 0 auto;
+    }
 
-      .search-form {
-        border: 0.2rem solid var(--color-primary-dark);
-        max-width: 64rem;
-        margin: 0 auto;
-        border-radius: 0.4rem;
-        position: relative;
-        transition: all 300ms ease-in-out;
-      }
+    .main-logo-icon {
+      margin-right: 2rem;
+    }
 
-      .search-input,
-      .search-button {
-        border: none;
-        background: none;
-        outline: none;
-        padding: 1rem;
-        transition: all 300ms ease-in-out;
-      }
+    .search-form {
+      border: 0.2rem solid var(--color-primary-dark);
+      max-width: 64rem;
+      margin: 0 auto;
+      border-radius: 0.4rem;
+      position: relative;
+      transition: all 300ms ease-in-out;
+    }
 
-      .search-input {
-        width: 100%;
-        padding-right: 3rem;
-      }
+    .search-input,
+    .search-button {
+      border: none;
+      background: none;
+      outline: none;
+      padding: 1rem;
+      transition: all 300ms ease-in-out;
+    }
 
-      .search-button {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
+    .search-input {
+      width: 100%;
+      padding-right: 3rem;
+    }
 
-      .search-button:focus {
-        outline: 0.1rem solid var(--color-primary);
-        background-color: rgba(0, 0, 0, 0.05);
-      }
+    .search-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
 
-      .search-form:focus-within {
-        border-color: var(--color-primary);
-        background-color: var(--color-white);
-      }
+    .search-button:focus {
+      outline: 0.1rem solid var(--color-primary);
+      background-color: rgba(0, 0, 0, 0.05);
+    }
 
-      .search-form:focus-within .search-button {
-        color: var(--color-primary);
-      }
+    .search-form:focus-within {
+      border-color: var(--color-primary);
+      background-color: var(--color-white);
+    }
 
-      .main-content {
-        padding-top: 0;
-      }
+    .search-form:focus-within .search-button {
+      color: var(--color-primary);
+    }
 
-      .main-content-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-        gap: var(--spacing-gutter-large);
-      }
+    .main-content {
+      padding-top: 0;
+    }
 
-      .recipe {
-        background-color: var(--color-white);
-        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
-        transform: scale(1);
-        transition: all 300ms ease-in-out;
-      }
+    .main-content-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+      gap: var(--spacing-gutter-large);
+    }
 
-      .recipe img {
-        max-width: 100%;
-      }
+    .recipe {
+      background-color: var(--color-white);
+      box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1);
+      transition: all 300ms ease-in-out;
+    }
 
-      .recipe-list-item {
-        max-width: 64rem;
-      }
+    .recipe img {
+      max-width: 100%;
+    }
 
-      .recipe-list-item:hover {
-        transform: scale(1.02);
-      }
-    </style>
-  </head>
+    .recipe-list-item {
+      max-width: 64rem;
+    }
+
+    .recipe-list-item:hover {
+      transform: scale(1.02);
+      box-shadow: -8px 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .recipe-title-container {
+      padding: var(--spacing-gutter-medium);
+      padding-bottom: 2rem;
+    }
+
+    .recipe-author {
+      padding: 0 var(--spacing-gutter-medium);
+    }
+
+    .recipe-content {
+      padding: var(--spacing-gutter-medium);
+      padding-top: 2rem;
+    }
+
+    .recipe-author-item {
+      color: var(--color-gray-4);
+      margin-right: 1rem;
+    }
+
+    .recipe-author a {
+      color: var(--color-primary);
+      transition: all 300ms ease-in-out;
+      text-decoration: none;
+    }
+
+    .recipe-author a:hover {
+      color: var(--color-primary-dark);
+    }
+  </style>
+</head>
+
 </html>
