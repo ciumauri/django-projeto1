@@ -9,6 +9,7 @@ def rand_ratio():
 
 
 fake = Faker('pt_BR')
+
 # print(signature(fake.random_number))
 
 
