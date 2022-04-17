@@ -72,9 +72,15 @@
       <span>ver mais...</span>
     </a>
   </footer>
-  {% endif %} {% if is_detail_page is True %}
-  <div class="preparation-steps">
-    <p>{{ recipe.preparation_steps|linebreaksbr }}</p>
-  </div>
+  {% endif %} 
+  
+  {% if is_detail_page is True %}
+      <div class="preparation-steps"> 
+          {% if recipe.preparation_steps_is_html is True %}
+              <p>{{ recipe.preparation_steps|safe }}</p>            
+          {% else %}
+              <p>{{ recipe.preparation_steps|linebreaksbr }}</p>
+          {% endif %}
+      </div>
   {% endif %}
 </div>
