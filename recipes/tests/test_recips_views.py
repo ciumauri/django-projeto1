@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.urls import resolve, reverse
 from recipes import views
+from recipes.models import Category, Recipe, User
 
 
 # teste de views
@@ -21,6 +22,10 @@ class RecipeViewsTest(TestCase):
         response = self.client.get(reverse('recipes:home'))
         self.assertIn('<h1>No recipe foud here 😒</h1>',
                       response.content.decode('utf-8'))
+
+    def test_recipe_home_template_loads_recipes(self):
+        category = Category.objects.create(name='Category')
+        assert 1 == 1
 
     def test_recipe_category_view_function_is_correct(self):
         view = resolve(reverse('recipes:category', kwargs={'category_id': 1}))
